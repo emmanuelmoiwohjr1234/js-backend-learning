@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        span{
+            color: aqua;
+            font-size: 50px;
+        }
+        *{
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: brown;
+            
+           width: 300px;
+            padding: 5em;
+            position: absolute;
+            left:-500px;
+            transition: 1s;
+            z-index: 1;
+
+        }
+        nav a{
+            text-transform: uppercase;
+            color: black;
+            margin: 20px;
+            display: block;
+           
+            max-width: 2rem;
+        }
+        nav a:hover{
+            color: blue;
+            transition: 0.5s;
+        }
+        .fa-solid{
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .hero{
+            transform: translate(-50px);
+            opacity: 0;
+            animation:more 4s forwards;
+            animation-delay: 0.5s;
+        }
+        @keyframes more{
+            to{
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+            
+            <nav id="links">
+              <i class="fa-solid fa-xmark" onclick = "hideMenu()"></i> 
+              <a href="">home</a>
+              <a href="">meeting</a>
+              <a href="">contact</a>
+              <a href="">car</a>
+              <a href="">home</a>
+              <a href="">blog</a>
+              <a href="">community</a>
+              <a href="">gallery</a>
+            </nav>
+            <i class="fa-solid fa-bars" onclick="showMenu()" ></i> 
+    </header>
+    <div class="hero">
+    <h1>I'm Emmanuel Moiwoh Jr <span class="auto"></span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam omnis labore consequuntur quisquam qui facere, cum aliquid minus dolores accusantium similique totam quidem animi, alias atque dolor aspernatur dolore? Molestias, unde? Amet, dolore cum. Accusantium consequatur dolorem illo, soluta modi rerum. Reprehenderit debitis voluptas recusandae assumenda impedit alias vero neque quidem quasi. Voluptas minima, perferendis nesciunt consectetur repudiandae expedita? Soluta animi ratione quasi consequatur, provident veniam nobis labore ipsa beatae consectetur quia. Adipisci nesciunt ipsa, quasi provident nulla deleniti reiciendis rerum asperiores sit aperiam porro labore nisi dolor! Vero nisi necessitatibus, voluptatibus nulla exercitationem, fugit, ratione dolores iste id fuga labore consequuntur voluptatum sed in. Blanditiis accusamus quae laboriosam non. Delectus eligendi, soluta possimus laudantium architecto dolorum deleniti eaque officiis totam ipsum, perspiciatis voluptas? Ipsa adipisci nostrum reprehenderit doloremque magnam, earum minima nesciunt nulla ipsum dolorem nam ipsam. Similique ipsa aut dolore, beatae, excepturi nemo nulla distinctio earum fugiat quis aliquid, libero molestias deleniti cum laboriosam explicabo dicta. Aperiam voluptatum possimus totam at nesciunt necessitatibus, quaerat atque adipisci doloremque voluptatem, neque magnam mollitia! Veritatis quas dolores totam maxime obcaecati accusamus eveniet dolorem sed rerum. Explicabo eum voluptatibus nulla. Sit laborum sed porro natus dolorum quibusdam quaerat sequi fugiat velit id doloremque, delectus quo magnam ducimus fuga minus. Vitae suscipit quod modi perspiciatis itaque repudiandae perferendis architecto atque nostrum quam doloremque, veniam harum impedit consectetur aspernatur sequi ipsam ullam eveniet reiciendis labore dolorem, repellendus saepe debitis in! Ad, esse. Saepe blanditiis id cumque repellendus veniam dolores sequi exercitationem ratione perferendis reiciendis fugiat commodi, facere, maiores qui mollitia a aspernatur deserunt placeat temporibus est non vero adipisci assumenda soluta! Culpa cupiditate omnis, laudantium totam possimus cumque, unde odit iusto dolorum soluta, eius nihil molestiae quaerat incidunt doloremque nesciunt dolor cum! Architecto sapiente mollitia quibusdam sint. Atque alias est magnam suscipit, quasi qui.</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam omnis labore consequuntur quisquam qui facere, cum aliquid minus dolores accusantium similique totam quidem animi, alias atque dolor aspernatur dolore? Molestias, unde? Amet, dolore cum. Accusantium consequatur dolorem illo, soluta modi rerum. Reprehenderit debitis voluptas recusandae assumenda impedit alias vero neque quidem quasi. Voluptas minima, perferendis nesciunt consectetur repudiandae expedita? Soluta animi ratione quasi consequatur, provident veniam nobis labore ipsa beatae consectetur quia. Adipisci nesciunt ipsa, quasi provident nulla deleniti reiciendis rerum asperiores sit aperiam porro labore nisi dolor! Vero nisi necessitatibus, voluptatibus nulla exercitationem, fugit, ratione dolores iste id fuga labore consequuntur voluptatum sed in. Blanditiis accusamus quae laboriosam non. Delectus eligendi, soluta possimus laudantium architecto dolorum deleniti eaque officiis totam ipsum, perspiciatis voluptas? Ipsa adipisci nostrum reprehenderit doloremque magnam, earum minima nesciunt nulla ipsum dolorem nam ipsam. Similique ipsa aut dolore, beatae, excepturi nemo nulla distinctio earum fugiat quis aliquid, libero molestias deleniti cum laboriosam explicabo dicta. Aperiam voluptatum possimus totam at nesciunt necessitatibus, quaerat atque adipisci doloremque voluptatem, neque magnam mollitia! Veritatis quas dolores totam maxime obcaecati accusamus eveniet dolorem sed rerum. Explicabo eum voluptatibus nulla. Sit laborum sed porro natus dolorum quibusdam quaerat sequi fugiat velit id doloremque, delectus quo magnam ducimus fuga minus. Vitae suscipit quod modi perspiciatis itaque repudiandae perferendis architecto atque nostrum quam doloremque, veniam harum impedit consectetur aspernatur sequi ipsam ullam eveniet reiciendis labore dolorem, repellendus saepe debitis in! Ad, esse. Saepe blanditiis id cumque repellendus veniam dolores sequi exercitationem ratione perferendis reiciendis fugiat commodi, facere, maiores qui mollitia a aspernatur deserunt placeat temporibus est non vero adipisci assumenda soluta! Culpa cupiditate omnis, laudantium totam possimus cumque, unde odit iusto dolorum soluta, eius nihil molestiae quaerat incidunt doloremque nesciunt dolor cum! Architecto sapiente mollitia quibusdam sint. Atque alias est magnam suscipit, quasi qui.</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam omnis labore consequuntur quisquam qui facere, cum aliquid minus dolores accusantium similique totam quidem animi, alias atque dolor aspernatur dolore? Molestias, unde? Amet, dolore cum. Accusantium consequatur dolorem illo, soluta modi rerum. Reprehenderit debitis voluptas recusandae assumenda impedit alias vero neque quidem quasi. Voluptas minima, perferendis nesciunt consectetur repudiandae expedita? Soluta animi ratione quasi consequatur, provident veniam nobis labore ipsa beatae consectetur quia. Adipisci nesciunt ipsa, quasi provident nulla deleniti reiciendis rerum asperiores sit aperiam porro labore nisi dolor! Vero nisi necessitatibus, voluptatibus nulla exercitationem, fugit, ratione dolores iste id fuga labore consequuntur voluptatum sed in. Blanditiis accusamus quae laboriosam non. Delectus eligendi, soluta possimus laudantium architecto dolorum deleniti eaque officiis totam ipsum, perspiciatis voluptas? Ipsa adipisci nostrum reprehenderit doloremque magnam, earum minima nesciunt nulla ipsum dolorem nam ipsam. Similique ipsa aut dolore, beatae, excepturi nemo nulla distinctio earum fugiat quis aliquid, libero molestias deleniti cum laboriosam explicabo dicta. Aperiam voluptatum possimus totam at nesciunt necessitatibus, quaerat atque adipisci doloremque voluptatem, neque magnam mollitia! Veritatis quas dolores totam maxime obcaecati accusamus eveniet dolorem sed rerum. Explicabo eum voluptatibus nulla. Sit laborum sed porro natus dolorum quibusdam quaerat sequi fugiat velit id doloremque, delectus quo magnam ducimus fuga minus. Vitae suscipit quod modi perspiciatis itaque repudiandae perferendis architecto atque nostrum quam doloremque, veniam harum impedit consectetur aspernatur sequi ipsam ullam eveniet reiciendis labore dolorem, repellendus saepe debitis in! Ad, esse. Saepe blanditiis id cumque repellendus veniam dolores sequi exercitationem ratione perferendis reiciendis fugiat commodi, facere, maiores qui mollitia a aspernatur deserunt placeat temporibus est non vero adipisci assumenda soluta! Culpa cupiditate omnis, laudantium totam possimus cumque, unde odit iusto dolorum soluta, eius nihil molestiae quaerat incidunt doloremque nesciunt dolor cum! Architecto sapiente mollitia quibusdam sint. Atque alias est magnam suscipit, quasi qui.</p>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var more = new Typed(".auto",{
+            strings: ["Designer", "Developer"],
+            typeSpeed:150,
+            backSpeed: 50,
+            loop: true,
+        })
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
